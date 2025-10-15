@@ -19,11 +19,7 @@
 </header>
 <main>
     <div id="container1">
-    <h2>INFORMACJE</h2>
-    <p>Numer telefonu: +48 213-769-670</p>
-     <p>E-mail:adagriov2@gmail.com</p>
-    <p>Adres siedziby: 47-100 Strzelce Opolskie Aleja Jana Pawła 21/37</p>
-    <p><a href="regulamin.txt" download>Pobierz regulamin</a></p>
+        <div></div>
     </div></main>
 <footer>
     <p>Stronę wykonał:Monka i Pifok</p>

@@ -31,6 +31,13 @@ main{
     text-align: center;
     margin-right: 4%;
 }
+#container1{
+    width: 98%;
+    background-color: lightblue;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 1%;
+    margin-left: 1%;
 article{
     width: 25%;
     background-color: lightblue;
