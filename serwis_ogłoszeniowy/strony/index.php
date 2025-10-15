@@ -16,11 +16,11 @@ if (mysqli_connect_errno()) {
 </head>
 <body>
     <header>
-        <section id="informacje"><h2>Informacje</h2></section>
+      <section id="informacje"  ><a href="informacje.php"><h2>Informacje</h2></a></section>
         <section id="kategorie"><h2>Kategorie</h2></section>
         <section id="oferta"><h2>Dodaj Oferte</h2></section>
         <section id="logo">
-            <h1><img src="" alt="super logo(wcale nie kradzione)"></h1>
+            <a href="index.php"><h1><img src="" alt="super logo(wcale nie kradzione)"></h1></a>
         </section>
     </header>
 
