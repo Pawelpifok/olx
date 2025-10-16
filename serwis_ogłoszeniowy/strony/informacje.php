@@ -11,7 +11,7 @@
 <body>
 <header>
     <section id="informacje"><a href="informacje.php"><h2>Informacje</h2></a></section>
-    <section id="kategorie"><h2>Kategorie</h2></section>
+    <section id="kategorie"><a href="kategorie.php"><h2>Kategorie</h2></a></section>
     <section id="oferta"><h2>Dodaj Oferte</h2></section>
     <section id="logo">
         <a href="index.php"><h1><img src="" alt="super logo(wcale nie kradzione)"></h1></a>
