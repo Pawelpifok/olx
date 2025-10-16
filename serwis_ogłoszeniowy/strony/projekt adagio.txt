@@ -1,0 +1,2 @@
+zapytania do strony
+1zap=SELECT towar.nazwa,towar.cena,towar.kategoria,towar.data_dodania,sprzedajacy.imie,sprzedajacy.nazwisko FROM `oferta` INNER JOIN towar on oferta.towar=towar.id_towar INNER join sprzedajacy on oferta.sprzedawca=sprzedajacy.id_sprzedajacego order by Rand();

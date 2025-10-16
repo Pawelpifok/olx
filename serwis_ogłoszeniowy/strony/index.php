@@ -20,14 +20,14 @@ if (mysqli_connect_errno()) {
         <section id="kategorie"><a href="kategorie.php"><h2>Kategorie</h2></a></section>
         <section id="oferta"><h2>Dodaj Oferte</h2></section>
         <section id="logo">
-            <a href="index.php"><h1><img src="" alt="super logo(wcale nie kradzione)"></h1></a>
+            <a href="index.php"><img src="Logo.png" alt="super logo(wcale nie kradzione)"></a>
         </section>
     </header>
 
         <main>
             <div id="container">
                 <h2>Oferty</h2>
-                <table>
+                <table id="oferty">
                     <?php
                     $zap=mysqli_query($connect, "SELECT towar.nazwa,towar.cena,towar.kategoria,towar.data_dodania,towar.opis,towar.img,sprzedajacy.imie,sprzedajacy.nazwisko FROM `oferta` INNER JOIN towar on oferta.towar=towar.id_towar INNER join sprzedajacy on oferta.sprzedawca=sprzedajacy.id_sprzedajacego order by Rand();");
 
