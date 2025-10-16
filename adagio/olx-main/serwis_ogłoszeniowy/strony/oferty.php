@@ -28,27 +28,39 @@ if (mysqli_connect_errno()) {
         <main>
             <div id="container">
            <h2>Dodaj Ofertę</h2>
-           <form action="">
+           <form action="oferty.php" method='POST'>
             <ul>
-                <li><label for='imie'><input type="text" name='imie' id='imie'></label></li>
-                <li><label for='nazwisko'><input type="text" name='nazwisko' id='nazwisko'></label></li>
-                <li><label for='tel'><input type="tel" name='tel' id='tel'></label></li>
-                <li><label for='email'><input type="text" name='email' id='email'></label></li>
-                <li><label for='img'><input type="file" name='img' id='img'></label></li>
-                <li><label for='cena'><input type="number" name='cena' id='cena'></label></li>
-                <li><label for='towar'><input type="text" name='towar' id='towar'></label></li>
-                <li><label for=''>Wybierz nazwę kategori:<select>
-                    <?php
-                    $zap=mysqli_query("$connect","SELECT nazwa FROM kategoria");
-                    while($row=mysqli_fetch_array($zap))
-                    {
-                        echo "<option value=".$row["nazwa"].">".$row["nazwa"]."</option>";
-                    }
-                    ?>
-                </select></label></li>
+                <li><label for='imie'>Podaj imię:<input type="text" name='imie' id='imie'></label></li><br>
+                <li><label for='nazwisko'>Podaj nazwisko:<input type="text" name='nazwisko' id='nazwisko'></label></li><br>
+                <li><label for='tel'>Podaj numer_telefonu:<input type="tel" name='tel' id='tel' placeholder="123-456-7890"></label></li><br>
+                <li><label for='email'>Podaj E-mail:<input type="text" name='email' id='email'></label></li><br>
+                <li><label for='towar'>Podaj nazwę towaru:<input type="text" name='towar' id='towar'></label></li><br>
+                <li><label for='img'>Podaj plik zdjęciowy:<input type="file" name='img' id='img'></label></li><br>
+                <li><label for='cena'>Podaj cene:<input type="number" name='cena' id='cena'></label></li><br>
+                <li>Wybierz nazwę kategori:<select name='kategoria'>
+                    <option value="Artykuły spożywcze">Artykuły spożywcze</option>
+                    <option value="Odzież i obuwie">Odzież i obuwie</option>
+                    <option value="Elektronika">Elektronika</option>
+                    <option value="Meble i wyposażenie wnętrz">Meble i wyposażenie wnętrz</option>
+                    <option value="Kosmetyki i chemia gospodarcza">Kosmetyki i chemia gospodarcza</option>
+                </select></li>
             </ul>
+            <button type="submit" name='submit'>Dodaj</button>
            </form>
             </div>
+            <?php
+            
+
+                $imie=$_POST["imie"];
+                $nazwisko=$_POST["nazwisko"];
+                $tel=$_POST["tel"];
+                $email=$_POST["email"];
+                $kategorie=$_POST["kategoria"];
+                $img=$_POST["img"];
+                $cena=$_POST["cena"];
+                $nazwa=$_POST["towar"];
+            
+            ?>
             <article>
                 <form action="index.php">
                     <input type="text" placeholder="wyszukiwarka">
