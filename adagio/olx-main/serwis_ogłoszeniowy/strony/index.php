@@ -15,10 +15,15 @@ if (mysqli_connect_errno()) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+    let a=document.getElementbyId("cena").value;
+    document.getElementbyId("wynik").innerHTML="cena:"+a;    
+        
+    </script>
     <header>
       <section id="informacje"  ><a href="informacje.php"><h2>Informacje</h2></a></section>
         <section id="kategorie"><h2>Kategorie</h2></section>
-        <section id="oferta"><h2>Dodaj Oferte</h2></section>
+        <section id="oferta"><a href='oferty.php'><h2>Dodaj Oferte</h2></a></section>
         <section id="logo">
             <a href="index.php"><h1><img src="" alt="super logo(wcale nie kradzione)"></h1></a>
         </section>
@@ -47,8 +52,9 @@ if (mysqli_connect_errno()) {
             <article>
                 <form action="index.php">
                     <input type="text" placeholder="wyszukiwarka">
-                    <label for="">cena:
-                    <input type="range"min="0" max="100000"></label>
+                    <div id='wynik'></div>
+                    <label>cena:
+                    <input type="range"min="0" max="100000" id='cena'></label>
                     <p>segreguj według: </p>
 
                 </form>
