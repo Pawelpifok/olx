@@ -55,13 +55,12 @@ if (mysqli_connect_errno()) {
                     </script>
                     <p>Kategorie: </p>
                         <!-- zapytanie wyświetla kategorie-->
-
                     <button id="wyszukiwarka" type="button">zastosuj</button>
                 </form>
             </article>
         </main>
     <footer>
- <p>Stronę wykonał:Monka i Pifok</p>
+ <p>Stronę wykonali: Monka i Pifok</p>
     </footer>
 
 </body>

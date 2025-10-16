@@ -29,7 +29,7 @@
     <p id="regulamin"><a href="regulamin.txt" download>Pobierz regulamin</a></p>
     </div></main>
 <footer>
-    <p>Stronę wykonał:Monka i Pifok</p>
+    <p>Stronę wykonali: Monka i Pifok</p>
 </footer>
 
 </body>
